@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="20232" started-at="2021-02-05T07:01:16Z" finished-at="2021-02-05T07:01:37Z">
+  <suite name="Suite" duration-ms="21226" started-at="2021-02-05T07:03:18Z" finished-at="2021-02-05T07:03:40Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="20232" started-at="2021-02-05T07:01:16Z" finished-at="2021-02-05T07:01:37Z">
+    <test name="Test" duration-ms="21226" started-at="2021-02-05T07:03:18Z" finished-at="2021-02-05T07:03:40Z">
       <class name="Amazon.Automate.Login">
-        <test-method status="PASS" signature="login()[pri:0, instance:Amazon.Automate.Login@19dc67c2]" name="login" duration-ms="13696" started-at="2021-02-05T07:01:16Z" finished-at="2021-02-05T07:01:30Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:Amazon.Automate.Login@19dc67c2]" name="login" duration-ms="15469" started-at="2021-02-05T07:03:18Z" finished-at="2021-02-05T07:03:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="nowLoginClick()[pri:0, instance:Amazon.Automate.Login@19dc67c2]" name="nowLoginClick" duration-ms="2276" started-at="2021-02-05T07:01:30Z" finished-at="2021-02-05T07:01:32Z">
+        <test-method status="PASS" signature="nowLoginClick()[pri:0, instance:Amazon.Automate.Login@19dc67c2]" name="nowLoginClick" duration-ms="2223" started-at="2021-02-05T07:03:34Z" finished-at="2021-02-05T07:03:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nowLoginClick -->
-        <test-method status="PASS" signature="o_getlogindata()[pri:0, instance:Amazon.Automate.Login@19dc67c2]" name="o_getlogindata" duration-ms="4179" started-at="2021-02-05T07:01:32Z" finished-at="2021-02-05T07:01:37Z">
+        <test-method status="PASS" signature="o_getlogindata()[pri:0, instance:Amazon.Automate.Login@19dc67c2]" name="o_getlogindata" duration-ms="3424" started-at="2021-02-05T07:03:36Z" finished-at="2021-02-05T07:03:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- o_getlogindata -->

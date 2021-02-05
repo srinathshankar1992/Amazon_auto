@@ -1,5 +1,6 @@
 package Resource;
 
+import java.awt.Robot;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -23,6 +24,7 @@ public class Base {
 
 	public static WebDriver driver;
 	public Properties prop;
+	public Robot rb;
 
 	public WebDriver initializedriver() throws IOException, InterruptedException {
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\Resource\\Details.properties");

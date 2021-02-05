@@ -5,7 +5,7 @@
     <classes>
       <class name="Amazon.Automate.Login">
         <methods>
-          <include name="login"/>
+          <include name="p_selectAnOptionFromDropDown"/>
         </methods>
       </class> <!-- Amazon.Automate.Login -->
     </classes>
