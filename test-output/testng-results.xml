@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16167" started-at="2021-02-02T14:46:44Z" finished-at="2021-02-02T14:47:00Z">
+  <suite name="Default suite" duration-ms="24409" started-at="2021-02-05T06:55:42Z" finished-at="2021-02-05T06:56:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16167" started-at="2021-02-02T14:46:44Z" finished-at="2021-02-02T14:47:00Z">
+    <test name="Default test" duration-ms="24409" started-at="2021-02-05T06:55:42Z" finished-at="2021-02-05T06:56:06Z">
       <class name="Amazon.Automate.Login">
-        <test-method status="PASS" signature="login()[pri:0, instance:Amazon.Automate.Login@5c3bd550]" name="login" duration-ms="11136" started-at="2021-02-02T14:46:44Z" finished-at="2021-02-02T14:46:55Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:Amazon.Automate.Login@5c3bd550]" name="login" duration-ms="16408" started-at="2021-02-05T06:55:42Z" finished-at="2021-02-05T06:55:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="nowLoginClick()[pri:0, instance:Amazon.Automate.Login@5c3bd550]" name="nowLoginClick" duration-ms="2064" started-at="2021-02-02T14:46:55Z" finished-at="2021-02-02T14:46:57Z">
+        <test-method status="PASS" signature="nowLoginClick()[pri:0, instance:Amazon.Automate.Login@5c3bd550]" name="nowLoginClick" duration-ms="5100" started-at="2021-02-05T06:55:59Z" finished-at="2021-02-05T06:56:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nowLoginClick -->
-        <test-method status="PASS" signature="o_getlogindata()[pri:0, instance:Amazon.Automate.Login@5c3bd550]" name="o_getlogindata" duration-ms="2922" started-at="2021-02-02T14:46:57Z" finished-at="2021-02-02T14:47:00Z">
+        <test-method status="PASS" signature="o_getlogindata()[pri:0, instance:Amazon.Automate.Login@5c3bd550]" name="o_getlogindata" duration-ms="2850" started-at="2021-02-05T06:56:04Z" finished-at="2021-02-05T06:56:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- o_getlogindata -->

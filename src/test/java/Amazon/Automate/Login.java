@@ -31,9 +31,9 @@ public class Login extends Base {
 	
 	
 	@Test
-	public void o_getlogindata()
+	public void o_getlogindata() throws IOException
 	{
-		String logindata =logindata().get("2");
+		String logindata =logindata().get("1");
 		System.out.println(logindata);
 		String arr[]=logindata.split("&");
         String username =arr[0];		
@@ -42,6 +42,7 @@ public class Login extends Base {
         lgh.mailid().sendKeys(username);
         lgh.continueButtonClick().click();
         lgh.SendPassword().sendKeys(password);
+        getScreenshot("username is sent and the password is encrypted");
         lgh.SigninbuttonClick().click();
         
        
