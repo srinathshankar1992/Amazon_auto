@@ -4,9 +4,17 @@
 <listeners>
 <listener class-name="Amazon.Automate.Listeners"/>
 </listeners>
-  <test name="Test">
+  <test name="AmazonTest">
     <classes>
       <class name="Amazon.Automate.Login"/>
     </classes>
-  </test> <!-- Test -->
+  </test>
+  <test name="goIbiboTest">
+    <classes>
+      <class name="Amazon.Automate.goibibo"/>
+    </classes>
+  </test>
+  
+  
+   <!-- Test -->
 </suite> <!-- Suite -->
