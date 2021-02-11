@@ -38,18 +38,20 @@ public class Base {
 					System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
-			driver.get(prop.getProperty("URL"));
+			//driver.get(prop.getProperty("URL"));
 			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-			getScreenshot("Page is loaded");
+			
 			Thread.sleep(2000);
-		} else if (browsername.equalsIgnoreCase("firefox")) {
+			return driver;
+		} 
+		else if (browsername.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			
 			driver.get(prop.getProperty("URL"));
 			System.out.println(driver.getTitle());
 			
-			
+			return driver;
 			
 		}
 

@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Amazon.Automate.Login">
+      <class name="Amazon.Automate.goibibo">
         <methods>
-          <include name="p_selectAnOptionFromDropDown"/>
+          <include name="calendercheck"/>
         </methods>
-      </class> <!-- Amazon.Automate.Login -->
+      </class> <!-- Amazon.Automate.goibibo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
