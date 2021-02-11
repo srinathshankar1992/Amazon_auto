@@ -34,11 +34,10 @@ public class Base {
 		System.out.println(browsername);
 		if (browsername.equalsIgnoreCase("Chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
-			//driver.get(prop.getProperty("URL"));
+			driver.get(prop.getProperty("URL"));
 			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 			
 			Thread.sleep(2000);
