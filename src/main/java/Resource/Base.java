@@ -14,9 +14,11 @@ import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.DataFormatter;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -25,6 +27,7 @@ public class Base {
 	public static WebDriver driver;
 	public Properties prop;
 	public Robot rb;
+	public static JavascriptExecutor js;
 
 	public WebDriver initializedriver() throws IOException, InterruptedException {
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\Resource\\Details.properties");
@@ -37,7 +40,7 @@ public class Base {
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
-			driver.get(prop.getProperty("URL"));
+			//driver.get(prop.getProperty("URL"));
 			driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 			
 			Thread.sleep(2000);
@@ -87,5 +90,53 @@ public class Base {
 		hm.put("2", "8884046381&Akshatha's husband");
 		return hm;
 	}
+	
+	public static void blinkanelement(WebElement element, WebDriver driver)
+	{
+		
+		js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].setAttribute('style', 'background: Red; border: 2px solid red;');",element);
+		
+	}
+	
+	//to get title of the webpage
+	
+	public String gettitleofwebpage(WebDriver driver)
+	{
+		js= (JavascriptExecutor)driver;
+		String title=js.executeScript("return document.title;").toString();
+		System.out.println(title);
+		return title;
+	}
+	
+	//to click on webelement(Can be used if we face any issues like stale element exception, etc)
+public void javascripttoclickonelement(WebElement element,WebDriver driver)
+{
+	js = (JavascriptExecutor)driver;
+	js.executeScript("arguments[0].click();", element);
+}
+
+
+// to get an alert message
+public void alertmessage(WebDriver driver, String alerted)
+{
+	js=(JavascriptExecutor)driver;
+	js.executeScript("alert('"+alerted+"')");
+	
+}
+
+//to scroll down till element
+public void Scrollintoview(WebDriver driver, WebElement element)
+{
+	js=(JavascriptExecutor)driver;
+	js.executeScript("arguments[0].scrollIntoView(true);",element);
+	
+}
+
+public void scrollpagetilldown(WebDriver driver)
+{
+	js=(JavascriptExecutor)driver;
+	js.executeScript("window.scrolTto(0,document.body.scrollHeight)");
+}
 
 }
