@@ -16,7 +16,7 @@
   </test>
    <test name="HandlingChildwindows">
     <classes>
-      <class name="Amazon.Automate.HandlingChildwindows"/>
+      <class name="Amazon.Automate.HandlingChildWindows"/>
     </classes>
   </test>
   
