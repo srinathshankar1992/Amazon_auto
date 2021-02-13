@@ -14,6 +14,23 @@
       <class name="Amazon.Automate.goibibo"/>
     </classes>
   </test>
+   <test name="HandlingChildwindows">
+    <classes>
+      <class name="Amazon.Automate.HandlingChildwindows"/>
+    </classes>
+  </test>
+  
+   <test name="javascript">
+    <classes>
+      <class name="Amazon.Automate.javascriptexecutor"/>
+    </classes>
+  </test>
+  
+   <test name="FramesTest">
+    <classes>
+      <class name="Amazon.Automate.Frames"/>
+    </classes>
+  </test>
   
   
    <!-- Test -->
